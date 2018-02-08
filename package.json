@@ -1,9 +1,11 @@
 {
   "name": "wootstrap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "webpack and typescript bootstrap - node module",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack --config configs/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,19 @@
   "bugs": {
     "url": "https://github.com/anusaini/wootstrap/issues"
   },
-  "homepage": "https://github.com/anusaini/wootstrap#readme"
+  "homepage": "https://github.com/anusaini/wootstrap#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "tslint": "^5.9.1"
+  }
 }
